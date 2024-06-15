@@ -1,7 +1,7 @@
 # Fitmu (쇼핑과 커뮤니티를 하나로!)
 ## 목차
 * 개요
-* 기능 설명
+* 상세 화면
 * 프로젝트 도중 만난 문제들
 
 ---
@@ -24,4 +24,12 @@
 
   > **Environment** :
   > <img alt="Eclipse IDE" src ="https://img.shields.io/badge/Eclipse IDE-2C2255.svg?&style=flat-square&logo=Eclipse IDE&logoColor=white"/> <img alt="Visual Studio" src ="https://img.shields.io/badge/Visual Studio-5C2D91.svg?&style=flat-square&logo=Visual Studio&logoColor=white"/> <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=flat-square&logo=GitHub&logoColor=white"/>
-* 멤버 : 전성모(<https://github.com/jeonsm22>), 이윤주(<>)
+* 멤버 : 전성모(<https://github.com/jeonsm22>), 이윤주(<https://github.com/yujachaa>)
+
+---
+### 상세 화면
+---
+|화면이름|화면이름|
+|---|---|
+|사진|사진|
+
