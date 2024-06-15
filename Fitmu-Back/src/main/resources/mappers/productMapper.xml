@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.ssafy.fitmu.dao.ProductDao">
+	<select id="selectOne" parameterType = "int" resultType = "Product">
+		SELECT * FROM product 
+		WHERE product_id = #{productId}
+	</select>
+	
+	<select id="selectAll" resultType = "Product">
+		SELECT * FROM product
+	</select>
+	
+	<select id = "searchByCondition" resultType = "Product" parameterType = "SearchCondition">
+		SELECT * FROM product
+		<!-- 동적쿼리(검색 조건) -->
+		<if test = "key != null">
+			WHERE ${key} LIKE concat('%', #{word}, '%')
+		</if>
+		<!-- 동적쿼리(정렬 조건) -->
+		<if test = "orderBy != null">
+			ORDER BY #{orderBy} #{orderByDir}
+		</if>        
+	</select>
+	
+	<insert id="insertProductScrap" parameterType="Map">
+		INSERT INTO product_scrapbook
+		VALUES(#{userId}, #{productId})
+	</insert>
+	
+	<delete id="deleteProductScrap" parameterType="Map">
+		DELETE FROM product_scrapbook
+		WHERE user_id = #{userId} AND product_id = #{productId}
+	</delete>
+	
+	<insert id="insertProductImage" parameterType = "ProductImage">
+		INSERT INTO product_image
+		VALUES (0, #{productId}, #{sellerId}, #{fileName}, now(), now())
+	</insert>
+	
+	<select id="getImageByProductId" parameterType = "int" resultType = "ProductImage">
+		SELECT * FROM product_image
+		WHERE product_id = #{productId}
+	</select>
+	
+	<select id="getDiscountList" parameterType="int">
+		SELECT * FROM product
+		WHERE discount_rate >= #{dicount}
+		ORDER BY discount_rate DESC
+	</select>
+	
+	<insert id="insertProduct" parameterType = "Product">
+		INSERT INTO product
+		VALUES (0, #{sellerId}, #{categoryId}, #{brand}, #{name}, #{price}, #{discountRate}, #{deliveryFee}, #{specialPrice}, now(), now(), 0, 0, #{productDetail})
+	</insert>
+	
+	<select id="getProductImage" resultType = "ProductImage">
+		SELECT * FROM product_image
+	</select>
+</mapper>
