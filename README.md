@@ -2,6 +2,7 @@
 ## 목차
 * 개요
 * 상세 화면
+* 주 기능
 * 프로젝트 도중 만난 문제들
 
 ---
@@ -29,7 +30,36 @@
 ---
 ### 상세 화면
 ---
-|화면이름|화면이름|
-|---|---|
-|사진|사진|
+### 1. 커뮤니티 메인화면
+![커뮤메인](https://github.com/jeonsm22/Fitmu/assets/136889446/96e672da-0e2e-44f9-874a-c243691c2608)
+---
+### 2. 쇼핑 메인화면
+![쇼핑메인](https://github.com/jeonsm22/Fitmu/assets/136889446/bca3faa6-b84a-40ea-9482-87a583c7c594)
+---
+### 3. 로그인 화면
+![로그인](https://github.com/jeonsm22/Fitmu/assets/136889446/14712ed8-1ac7-406c-bd51-0eabb4c25529)
+---
+### 4. 회원가입 화면
+![회원가입](https://github.com/jeonsm22/Fitmu/assets/136889446/f9f9efff-ff7d-4e8b-b469-a17ae781e868)
+---
+### 5. 마이페이지 화면
+![마이페이지](https://github.com/jeonsm22/Fitmu/assets/136889446/0cd395be-2796-4fcc-9b49-3c2c4b2a94b5)
+---
+### 6. 게시글 상세화면
+![게시글상세](https://github.com/jeonsm22/Fitmu/assets/136889446/3362d03c-048c-4fbf-9bba-ecb2523833d0)
+---
+### 7. 상품 상세화면
+![상품상세](https://github.com/jeonsm22/Fitmu/assets/136889446/9990e1f3-a486-419e-8486-6d507e263f87)
+---
+### 8. 상품 등록화면
+![상품등록](https://github.com/jeonsm22/Fitmu/assets/136889446/d4a0aa3d-da92-4b15-a6f0-a6f9b50e365f)
+---
+### 9. 주문 화면
+![주문](https://github.com/jeonsm22/Fitmu/assets/136889446/6eb34a83-dca8-4585-98a8-f0b74da06f06)
+---
+### 10. 검색 화면
+> 사진이 너무 커서 다운받아서 보시면 될 것 같습니다. 죄송합니다!
 
+---
+### 주요 기능
+---
